@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Expence Tracker</h1>
+      </header>
+      <div class="balance">
+        <span>Your Balance</span>
+        <h2 id="balanceval">$0.00</h2>
+      </div>
+      <div class="incomeexp">
+        <div class="income">INCOME</div>
+        <div class="expense">EXPENSE</div>
+      </div>
+      <div class="history">
+        <div>History</div>
+        <hr color="black" />
+        <div class="historydivs"></div>
+      </div>
+      <br />
+      <div class="addtrans">
+        <caption style="margin: 5px; height: 30px; width: 20px">
+          Add New Transaction
+        </caption>
+        <hr style="height: 1px; background-color: black" />
+        <br />
+        <label for="text">Text</label>
+        <input
+          type="text"
+          name=""
+          id="text"
+          class="inputbox"
+          placeholder="enter Text"
+        />
+        <label for="amount"> Amount (negative-expense,positive-income) </label>
+        <input
+          type="number"
+          name=""
+          id="amount"
+          class="inputbox"
+          placeholder="enter amount"
+        />
+        <button id="transact">Transaction</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
